@@ -13,9 +13,9 @@ const Product = () => {
   return (
     <div>
       {/* Corrected prop name to 'product' */}
-      <BreadCrumbs product={product} />
+      {/* <BreadCrumbs product={product} /> */}
       <ProductDisplay product={product}/>
-      <DescriptionBox/>
+      {/* <DescriptionBox/> */}
       <RelatedProduct/>
     </div>
   );

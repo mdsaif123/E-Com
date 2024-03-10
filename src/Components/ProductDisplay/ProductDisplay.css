@@ -1,4 +1,4 @@
-.productdisplay{
+/* .productdisplay{
     display: flex;
     margin: 0px 170px;
 }
@@ -93,4 +93,10 @@ cursor: pointer;
 }
 .productdisplay-right-category span{
     font-weight: 600;
+} */
+
+@media(max-width:500px){
+    .productdisplay-img-list{
+        display: none;
+    }
 }
