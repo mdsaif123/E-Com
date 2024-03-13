@@ -55,7 +55,7 @@ const Footer = () => {
                     <div className="col-md-12">
                         <div className="footer-logo d-flex justify-content-center align-items-center gap-3">
                             <img src={footer_image} alt="" />
-                            <p>SHOPPER</p>
+                            <p>MYSHOP</p>
                         </div>
                     </div>
                     <div className="col-md-12">

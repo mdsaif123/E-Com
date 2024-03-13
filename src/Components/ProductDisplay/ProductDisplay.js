@@ -76,14 +76,9 @@ const ProductDisplay = (props) => {
         <div className='container productdisplay'>
             <div className="row">
                 <div className="col-lg-6">
-                    <div className="productdisplay-img-list">
-                        <img src={product.image} alt="" />
-                        <img src={product.image} alt="" />
-                        <img src={product.image} alt="" />
-                        <img src={product.image} alt="" />
-                    </div>
-                    <div className="productdisplay-img">
-                        <img className='productdisplay-main-img' src={product.image} alt="" />
+                   
+                    <div className="productdisplay-img img-fluid">
+                        <img className='productdisplay-main-img img-fluid' src={product.image} alt="" />
                     </div>
                 </div>
                 <div className="col-lg-6">
@@ -105,15 +100,14 @@ const ProductDisplay = (props) => {
                     </div>
                     <div className="productdisplay-right-size">
                         <h1>Select Size</h1>
-                        <div className="productdisplay-right-sizes d-flex ">
-                            <div className='mx-2'>S</div>
-                            <div className='mx-2'>M</div>
-                            <div className='mx-2'>L</div>
-                            <div className='mx-2'>XL</div>
-                            <div className='mx-2'>XXL</div>
+                        <div className="productdisplay-right-sizes d-flex flex-wrap ">
+                            <div className='mx-1'>S</div>
+                            <div className='mx-1'>M</div>
+                            <div className='mx-1'>L</div>
+                            <div className='mx-1'>XL</div>
                         </div>
                     </div>
-                    <button className="btn btn-primary my-3" style={{background:"#ff4141",border:"none"}} onClick={() => { addToCart(product.id) }}>Add to cart</button>
+                    <button className="btn btn-primary my-3 cart-btn" style={{background:"#ff4141",border:"none" }} onClick={() => { addToCart(product.id) }}>Add to cart</button>
                     <p className='productdisplay-right-category'> <span>category:</span> Women, T-shirt, Crop Top</p>
                     <p className='productdisplay-right-category mb-5'> <span>Tags:</span> Modern, Latest</p>
                 </div>
